@@ -5,7 +5,7 @@ nav:
  - Обо мне: index.md
  - Мои работы:
     - Docs as Code для самых маленьких:
-      - Общая информация: dac/index.md
+      - Введение: dac/index.md
       - Настройка окружения: dac/enviroment.md
       - Обзор репозитория: dac/repo_overview.md
       - Работа в репозитории: dac/repo_flow.md
