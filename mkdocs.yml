@@ -1,0 +1,57 @@
+site_name: Денис Никончук — Портфолио технического писателя
+site_description: Портфолио технического писателя.
+site_author: Denis Nikanchuk
+nav:
+ - Обо мне: index.md
+ - Мои работы:
+    - Docs as Code для самых маленьких:
+      - Общая информация: dac/index.md
+      - Настройка окружения: dac/enviroment.md
+      - Обзор репозитория: dac/repo_overview.md
+      - Работа в репозитории: dac/repo_flow.md
+      - Перечень команд: dac/cheat_sheet.md
+      - Работа в MkDocs: dac/drill.md
+      - Публикация сайта: dac/deploy.md
+    - Обнаружение и реагирование на фишинговые домены: phish.md
+    - API-документация:
+      - Обзор: api-docs/index.md
+
+theme:
+  name: material
+  language: ru
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема / Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема / Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+
+plugins:
+ - search
+
+extra_css:
+ - 'stylesheets/extra-page-content.css'
+ - 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'
